@@ -37,6 +37,7 @@
 ## print(ali[3:5])
 ## print(ali[5:8])
 ## print(ali[8:10])
+#
 
 
 ali = list()
