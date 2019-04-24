@@ -18,5 +18,16 @@ do
 done
 echo `ls`
 echo '============'
-echo $["==========="*20]
+
+
+name=zhangqiang
+firstname=${name#*g}
+lastname=${name%q*}
+echo ${firstname}
+echo ${lastname}
+echo ${lastname}${firstname}
+
+mv ${name} ${firstname}${lastname}
+echo ${name}
+
 
