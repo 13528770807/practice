@@ -14,7 +14,7 @@ TAB ( \t )。
 """
 print(para_str)
 
-tup3 = 'a','b','c'  # 元组不用括号也可以
+tup3 = 'a', 'b', 'c'  # 元组不用括号也可以
 print(type(tup3))
 
 # 常量>>>

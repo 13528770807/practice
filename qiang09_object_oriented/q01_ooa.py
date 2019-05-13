@@ -1,7 +1,7 @@
 
 
 class Zqiang():
-    def zqiang(self):
+    def zqiang(self):  # 第一个参数(self)代表实例化出来的对象
         print(self)
         print(self.__class__)
 

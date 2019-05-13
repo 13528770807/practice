@@ -39,7 +39,7 @@ print(ali3)
 
 # 创建字典
 print("="*60)
-dic = dict([("zhangqiang", 19), ("lishi", 20), ("wangwu", 21)])  # 构造函数dict()直接从无阻列表中构建字典
+dic = dict([("zhangqiang", 19), ("lishi", 20), ("wangwu", 21)])  # 构造函数dict()直接从元阻列表中构建字典
 print(dic)
 dic2 = dict(zhangsan=18, lisi=19, wangwu=20, zhaoliu=21)  # 关键字指定键值对
 print(dic2)
@@ -67,5 +67,6 @@ basket = ['apple', 'orange', 'apple', 'pear', 'orange', 'banana']
 sor = sorted(basket)
 print(sor)
 
+# set 去重
 for f in sorted(set(basket)):
     print(f)
