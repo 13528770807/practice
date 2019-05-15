@@ -23,7 +23,7 @@ class Calculator:
 
 
 calc = Calculator(28, 2)  # 实例化对象
-add = calc.add()
+add = calc.add()  # 调用add()方法
 print(add)
 print(calc.subtract())
 print(calc.multiply())
