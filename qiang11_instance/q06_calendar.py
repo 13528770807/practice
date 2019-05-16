@@ -24,4 +24,6 @@ def getYesterday():
     return yesterday
 
 
+Today = datetime.date.today()
+print(Today)
 print(getYesterday())
