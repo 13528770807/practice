@@ -29,7 +29,7 @@ print(Today)
 print(getYesterday())
 
 
-# 方法二
+# 方法二 简洁
 def getYesterday2():
     yesterday = datetime.date.today() + datetime.timedelta(-1)
     return yesterday
