@@ -15,7 +15,6 @@ month_range = calendar.monthrange(2019, 6)  # 打印日历天数,返回元阻,�
 print(month_range)
 
 
-
 def getYesterday():
     '''获取昨天日期'''
 
