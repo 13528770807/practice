@@ -18,12 +18,22 @@ print(month_range)
 def getYesterday():
     '''获取昨天日期'''
 
-    today = datetime.date.today()
-    oneday = datetime.timedelta(days=1)
+    today = datetime.date.today()  # 今天
+    oneday = datetime.timedelta(days=1)  # 一天
     yesterday = today - oneday
     return yesterday
 
 
-Today = datetime.date.today()
+Today = datetime.date.today()  # 今天
 print(Today)
 print(getYesterday())
+
+
+# 方法二
+def getYesterday2():
+    yesterday = datetime.date.today() + datetime.timedelta(-1)
+    return yesterday
+
+
+print(datetime.timedelta(-1))  # 负一天
+print(getYesterday2())
