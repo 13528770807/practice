@@ -17,6 +17,10 @@ print(otherStyleTime)
 
 
 # instance 2
+#给定时间戳
 timeStamp2 = 1557502800
 dateArray = datetime.datetime.utcfromtimestamp(timeStamp2)
 print('dateArray:', dateArray)
+
+otherStyleTime2 = dateArray - datetime.timedelta(days=3)
+print(otherStyleTime2)
