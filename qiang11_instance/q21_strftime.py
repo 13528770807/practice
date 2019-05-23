@@ -6,7 +6,7 @@ import time
 now = int(time.time())
 print(now)
 timeArray = time.localtime(now)
-print(timeArray)
+print('timeArray:', timeArray)
 otherStyletime = time.strftime('%Y-%m-%d %H:%M:%S', timeArray)
 print(otherStyletime)
 
