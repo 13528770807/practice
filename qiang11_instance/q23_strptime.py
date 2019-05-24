@@ -18,3 +18,12 @@ print(timeStamp)
 # print(timeArray2)
 # otherStyleTime = time.strftime("%Y/%m/%d %H:%M:%S", timeArray)
 # print(otherStyleTime)
+
+
+timeStamp2 = int(time.time())
+# timeStamp2 = 1408413451
+print('time:', timeStamp2)
+timeArray2 = time.localtime(timeStamp2)
+otherStyleTime = time.strftime("%Y-%m-%d %H:%M:%S", timeArray2)
+# otherStyleTime = time.strftime("%m%d%H%M", timeArray2)
+print(otherStyleTime)
