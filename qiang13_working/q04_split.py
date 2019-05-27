@@ -1,7 +1,7 @@
 
 
-b = 'hello,wor*ldhh'
-print(b.split("*"))  # 字符串内指定符号切割
+b = 'hello,wor*ldhh'  # 字符串内指定符号切割
+print(b.split("*"))   # ['hello,wor', 'ldhh']
 
 li = list()
 a = ["啊啊啊啊啊", "呃呃呃。鹅鹅鹅鹅鹅鹅饿"]  # 列表内指定符号切割
