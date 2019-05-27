@@ -56,7 +56,7 @@ class Date():
 
     @staticmethod
     def tomorrow():
-        t = time.localtime(time.time()+86400)  # 获取当天+1天时间(明天)
+        t = time.localtime(time.time()+86400)  # 获取当天+1天时间(明天),
         return Date(t.tm_year, t.tm_mon, t.tm_mday)
 
 
