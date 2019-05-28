@@ -33,20 +33,15 @@ l1 = [1, 2, 3, "4", 5]
 # l2 = [1, 3, 4, 7]
 
 
-list1 = str(l1)
-str1 = 'aaa'
-str2 = list1 + str1
-print(type(list1))  # <class 'str'>
-print(str2)  # [1, 2, 3, '4', 5]aaa
+# list1 = str(l1)
+# str1 = 'aaa'
+# str2 = list1 + str1
+# print(type(list1))  # <class 'str'>
+# print(str2)  # [1, 2, 3, '4', 5]aaa
 
 
 ali = [int(x) for x in l1]  # 通过列表推导式 将含有字符串的列表 转为整型数字列表
 print('ali:', ali)  # ali: [1, 2, 3, 4, 5]
 
 
-lst3 = [("A", 1), ("C", 18), ("F", 9), ("B", 2)]
-lst3.sort(key=lambda x: x[0], reverse=True)  # 列表中的元阻第一位降序排序
-resul = sorted(lst3, key=lambda a: a[1])  # 列表中的元阻第二位升序排序
-print('lst3:', lst3)
-print('resul:', resul)
 
