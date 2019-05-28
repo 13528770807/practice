@@ -8,7 +8,7 @@ list2 = [4, 5, 6, 7, 8, 9]
 
 
 li = [var for var in list1 if var in list2]
-print(li)
+print(li)  # [4, 5, 6]
 
 
 # 方法二
@@ -20,9 +20,9 @@ print(list(set(list1).intersection(set(list2))))
 
 #  给定两个列表取并集 union
 print('list1:', set(list1))  # 列表转集合
-print('a|b:', a | b)  # 并集
+print('a|b:', a | b)  # 并集   a|b: {1, 2, 3, 4, 5, 6, 7, 8, 9}
 
-print(list(set(list1).union(set(list2))))
+print(list(set(list1).union(set(list2))))  # [1, 2, 3, 4, 5, 6, 7, 8, 9]
 
 
 # 获取两个 list 的差集
