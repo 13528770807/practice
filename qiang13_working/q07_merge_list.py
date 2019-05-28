@@ -2,7 +2,7 @@
 
 #合并两个列表，相同的不要
 # 方法一
-li1 = [1, 2, 34, 5, 6]
+li1 = [1, '2', 34, 5, 6]
 li2 = [2, 3, 4, 5, 67, 8, 89, 9, 34, 666]
 
 for i in range(len(li1)):
@@ -43,5 +43,13 @@ l1 = [1, 2, 3, "4", 5]
 ali = [int(x) for x in l1]  # 通过列表推导式 将含有字符串的列表 转为整型数字列表
 print('ali:', ali)  # ali: [1, 2, 3, 4, 5]
 
+
+# 方法三
+print('set().union:', list(set(li1).union(set(li2))))
+
+# 方法四
+a = set(li1)
+b = set(li2)
+print('a|b:', list(a | b))
 
 
