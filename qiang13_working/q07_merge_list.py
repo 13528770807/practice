@@ -1,37 +1,31 @@
 
 
 #合并两个列表，相同的不要
+# 方法一
 li1 = [1, 2, 34, 5, 6]
-li2 = [2, 3, 4, 5, 67, 8, 89, 9, 34]
+li2 = [2, 3, 4, 5, 67, 8, 89, 9, 34, 666]
 
-# for i in range(len(li1)):
-#     if li1[i] not in li2:
-#         li2.append(li1[i])
-#
-# print(li2)
+for i in range(len(li1)):
+    if li1[i] not in li2:
+        li2.append(li1[i])
 
-
-# TODO
-# li1.extend(li2)
-# print('li1==>', li1)
-# for i in range(len(li1)):
-#     print(i)
-#     if li1.count(li1[i]) > 1:
-#         print('remove:', li1[i])
-#         li1.remove(li1[i])
-#
-# print('result:', li1)
+print('li2:', li2)
 
 
-# li1.extend(li2)
-# i = 0
-# while i < len(li1):
-#     for j in li1:
-#         while li1.count(j) > 1:
-#             li1.remove(j)
-#         i = i + 1
-#     print(li1)
+# extend
+li1.extend(li2)
+print('li1:', li1)
 
-# li3 = [1, 2, 3]
-# li3.remove(3)
-# print(li3)
+
+# 方法二
+lst2 = [1, 2, 34, 5, 6, 2, 3, 4, 5, 67, 8, 89, 9, 34, 666, 9]
+n = 0
+while n < len(lst2):
+    for i in lst2:
+        if lst2.count(i) > 1:
+            lst2.remove(i)
+        n += 1
+
+print('lst2:', lst2)
+
+
