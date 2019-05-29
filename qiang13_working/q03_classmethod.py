@@ -41,3 +41,32 @@ x = e.now()  # 通过实例e去调用类方法也一样可以使用,静态方法
 print(x)
 
 
+class A(object):
+    def foo(self, x):
+        print("executing foo(%s,%s)" % (self, x))
+        print('self:', self)
+
+    @classmethod
+    def class_foo(cls, x):
+        print("executing class_foo(%s,%s)" % (cls, x))
+        print('cls:', cls)
+
+    @staticmethod
+    def static_foo(x):
+        print("executing static_foo(%s)" % x)
+
+
+a = A()
+a.foo('foo')
+a.class_foo('class_foo')
+a.static_foo('static_foo')
+
+a.foo(1)
+# A.foo(2)  # 类对象调用实例方法会报错
+A.foo(a, 2)
+A.class_foo(3)  # 类方法由类对象调用
+a.class_foo(4)  # 类方法也可由实例对象调用
+A.static_foo(5)  # 静态方法可由类对象调用
+a.static_foo(6)  # 静态方法也可由实例对象调用
+
+
