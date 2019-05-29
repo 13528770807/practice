@@ -1,5 +1,6 @@
 from multiprocessing import Pipe, Process
 
+
 # 子进程函数 执行方法
 def foo(subconn):
     print('from parent_conn:', subconn.recv())
