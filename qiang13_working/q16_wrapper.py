@@ -30,11 +30,13 @@ def wrapper(fun):  # 把函数foo 做为参数传进来
     return inner  # 返回自身函数名
 
 
+# @wrapper
 def foo(n, m):
     print('n:', n)
     print('m:', m)
     return n+m+100
 
 
-foo1 = wrapper(foo)  # foo1 实际就是 inner
+foo1 = wrapper(foo)  # foo1 实际就是 inner ; (foo1对象名,也可以写成 foo)
 print(foo1(1, 2))  # 调用 inner 函数
+# print(foo(1, 2))
