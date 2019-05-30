@@ -27,5 +27,7 @@ if __name__ == "__main__":
         # 串行
         # pool.apply(func=son, args=(i,))
     print('end')
+    # 先关闭进程池再 jion
     pool.close()
+    # 进程池中进程执行完毕再关闭, 如果注释,那么程序直接关闭
     pool.join()
