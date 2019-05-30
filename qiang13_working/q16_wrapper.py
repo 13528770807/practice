@@ -23,7 +23,7 @@ print('5 >> g1:', g1(5))
 
 # 实例二
 def wrapper(fun):  # 把函数foo 做为参数传进来
-    def inner(*args, **kwargs):
+    def inner(*args, **kwargs):  # 闭包函数
         print('*args,**kwargs:', *args, **kwargs)  # *args, **kwargs 解包参数
         print('outfun_name:', fun.__name__)  # 主要功能的增加, 获取函数名 等
         return fun(*args, **kwargs)  # 调用原函数并返回
