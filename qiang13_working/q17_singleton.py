@@ -1,5 +1,30 @@
 
 
+# 单例 使用模块
+from qiang13_working.q18_mysingleton import mysingleton
+
+mysingleton.foo()
+
+
+# # 单例
+# class Singleton():
+#     def __new__(cls, *args, **kwargs):
+#         if not hasattr(cls, '_inst'):
+#             cls._inst = super(Singleton, cls).__new__(cls)
+#         return cls._inst
+#
+#
+# class Son(Singleton):
+#     def __init(self, x):
+#         self.x = x
+#
+#
+# a = Son(4)
+# b = Son(6)
+# print(a)
+# print(b)
+
+
 """
 # 使用装饰器 实现单例
 def foo(f):  # 类f 当做参数传入函数
@@ -30,22 +55,13 @@ print(a.x)
 print(b.x)
 """
 
-
-# 单例
-class Singleton():
-    def __new__(cls, *args, **kwargs):
-        if not hasattr(cls, '_inst'):
-            cls._inst = super(Singleton, cls).__new__(cls)
-        return cls._inst
+# 使用类
+class Singleton1():
+    def __init(self):
+        pass
 
 
-class Son(Singleton):
-    def __init(self, x):
-        self.x = x
-
-
-a = Son(4)
-b = Son(6)
-print(a)
-print(b)
-
+    @classmethod
+    def foo(cls):
+        if not hasattr(Singleton1, '_instance'):
+            Singleton1._instance = super(Singleton1, )
