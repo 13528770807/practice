@@ -1,7 +1,7 @@
 
 
 """
-# 使用装饰器
+# 使用装饰器 实现单例
 def foo(f):  # 类f 当做参数传入函数
     _instance = {}  # 创建空字典, 用于存放实例对象
 
@@ -31,7 +31,7 @@ print(b.x)
 """
 
 
-# 装饰器
+# 单例
 class Singleton():
     def __new__(cls, *args, **kwargs):
         if not hasattr(cls, '_inst'):
