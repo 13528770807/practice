@@ -126,6 +126,6 @@ print('failure')  # 不打印
 # touch mkdir sudo install version pip list cd more echo rm
 
 
-# 20、python2和python3区别？列举5个
+# 20、python2和python3区别？列举5个,
 name = raw_input('')
 print(name)
