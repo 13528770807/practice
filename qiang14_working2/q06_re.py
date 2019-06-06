@@ -173,9 +173,9 @@ GET范围请求已成功处理
 dic = {"name": "zs", "age": 18}
 dic1 = {"name": "zs", "age": 18}
 dic.pop('name')
-print(dic)
+print(dic)  # {'age': 18}
 del dic1['name']
-print(dic1)
+print(dic1)  # {'age': 18}
 
 
 # 59、列出常见MYSQL数据存储引擎
@@ -204,7 +204,7 @@ print(list(zip(('a', 'b', 'c', 'd', 'e'), (1, 2, 3, 4, 5))))  # [('a', 1), ('b',
 # print(res)
 
 res2 = [a1[x] for x in a1]
-print(res2)
+print(res2)  # [1, 4, 2, 3, 5]
 
 
 # dict() 创建新字典
