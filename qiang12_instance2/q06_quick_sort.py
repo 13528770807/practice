@@ -13,26 +13,24 @@
 '''
 
 
-def quickSort(arr, low, hight):
-    j = low
-    for i in range(j, hight):
-        if arr[i] < arr[hight]:
-            arr[j], arr[i] = arr[i], arr[j]
-            j += 1
-    arr[j], arr[hight] = arr[hight], arr[j]
-    return j
-
-
-if __name__ == "__main__":
-    arr = [10, 7, 8, 9, 1, 5, 6]
-    m = quickSort(arr, 0, len(arr)-1)
-    print(m)
-    quickSort(arr, 0, m-1)
-    quickSort(arr, m+1, len(arr)-1)
-    print(arr)
-
-
-
+# bug
+# def quickSort(arr, low, hight):
+#     j = low
+#     for i in range(j, hight):
+#         if arr[i] < arr[hight]:
+#             arr[j], arr[i] = arr[i], arr[j]
+#             j += 1
+#     arr[j], arr[hight] = arr[hight], arr[j]
+#     return j
+#
+#
+# if __name__ == "__main__":
+#     arr = [22, 88, 10, 7, 8, 9, 1, 33, 5, 6, 77]
+#     m = quickSort(arr, 0, len(arr)-1)
+#     print("m:", m)
+#     quickSort(arr, 0, m-1)
+#     quickSort(arr, m+1, len(arr)-1)
+#     print(arr)
 
 
 """
@@ -74,3 +72,49 @@ print("排序后的数组:")
 for i in range(n):
     print("%d" % arr[i], end=' ')
 """
+
+
+# def quick_sort(li, low):
+#     for i in range(1, len(li)):
+#        if li[low] > li[i]:
+#            li[low], li[i] = li[i], li[low]
+#
+#     return li
+#
+# if __name__ == "__main__":
+#     arr = [12, 11, 13, 5, 6, 7]
+#     print(quick_sort(arr, 0))
+
+
+# 冒泡排序
+# arr = [12, 11, 13, 66, 5, 6, 7]
+# n = len(arr)
+# for i in range(n):
+#     for j in range(n-i-1):
+#         if arr[j] > arr[j+1]:
+#             arr[j+1], arr[j] = arr[j], arr[j+1]
+#
+#
+# print(arr)
+
+
+# def quick_sort(li, low, hight):
+#     j = low
+#     for i in range(j, hight):
+#         if li[i] < li[hight]:
+#             li[i], li[j] = li[j], li[i]
+#             j += 1
+#     li[hight], li[j] = li[j], li[hight]
+#     return j
+#
+#
+# if __name__ == '__main__':
+#     arr = [12, 11, 13, 1, 5, 6, 7, 3]
+#     mid = quick_sort(arr, 0, len(arr)-1)
+#     quick_sort(arr, 0, mid-1)
+#     quick_sort(arr, mid+1, len(arr)-1)
+#     print(arr)
+
+
+
+
